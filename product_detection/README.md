@@ -18,7 +18,6 @@ bash download.sh
 ```
 bash test.sh <data_dir>
 ```
-NOTE: <data_dir> should have train, test, test.csv, train.csv
 
 ## How to train my code
 ```
@@ -26,15 +25,21 @@ python3 train.py <data_dir>
 ```
 You can choose the model by change the line 53 or checkout the [torchvision website](https://pytorch.org/docs/stable/torchvision/models.html) to select the model you preferred.
 
-## Leaderboard(Kaggle)
+NOTE: <data_dir> should have train, test, test.csv, train.csv
 
-Competition website: https://www.kaggle.com/c/shopee-product-detection-student/
+## Ensemble
+
+We know that if our models are more diverse, we can improve our scores more effectively in ensemble (weighted voting). You can execute `ensemble.py` in the `results` directory to get our highest score on the kaggle leaderboard.
+
+## Leaderboard (Kaggle)
 
 Team name: Team SOTA
 
 Public Leaderboard: 0.82845 
 
 Private Leaderboard: 0.82839 (31/823)
+
+Competition website: https://www.kaggle.com/c/shopee-product-detection-student/
 
 
 ## Contact information
